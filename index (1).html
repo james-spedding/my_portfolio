@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name — Mechanical Engineering Projects</title>
+<meta name="description" content="Mechanical engineering projects: EV conversions, battery packaging, drive unit mounting and fabrication.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#DEDFDC;--panel:#EDEDEB;--ink:#1A1C1E;--muted:#55595E;--line:#B9BBB8;--hv:#D9480F;--hv-ink:#fff;
+--head:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"Barlow","Helvetica Neue",Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151617;--panel:#1E2022;--ink:#E8E8E5;--muted:#9A9EA3;--line:#33363A;--hv:#FF7A2F;--hv-ink:#151617}}
+:root[data-theme="dark"]{--bg:#151617;--panel:#1E2022;--ink:#E8E8E5;--muted:#9A9EA3;--line:#33363A;--hv:#FF7A2F;--hv-ink:#151617}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--hv);outline-offset:3px}
+.wrap{max-width:70rem;margin:0 auto;padding:1.5rem 1.25rem 4rem}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;font:600 1rem var(--head);letter-spacing:.02em}
+.bar nav{display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap}
+.bar a{text-decoration:none;color:var(--muted)}
+.bar a:hover{color:var(--ink)}
+#theme{font:inherit;background:none;border:1px solid var(--line);color:var(--ink);padding:.2rem .7rem;cursor:pointer}
+.hero{display:grid;grid-template-columns:1fr auto;gap:2rem 3rem;align-items:end;padding:clamp(2.5rem,7vw,5rem) 0 2.5rem}
+h1{font:700 clamp(3rem,10vw,6.5rem)/.92 var(--head);margin:0 0 1.25rem;letter-spacing:-.01em}
+.hero p{margin:0;max-width:34rem;font-size:1.2rem;color:var(--muted)}
+.hero p b{color:var(--ink);font-weight:600}
+.about{display:flex;gap:1rem;align-items:center}
+.about img{width:7.5rem;height:9.5rem;object-fit:cover;border-bottom:4px solid var(--hv)}
+.about small{display:block;max-width:11rem;color:var(--muted);font-size:.9rem;line-height:1.4}
+.proj{border-top:3px solid var(--ink);padding:1.5rem 0 3rem}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:.5rem 3rem;margin-bottom:1.5rem}
+.proj h2{font:700 clamp(1.9rem,4vw,2.8rem)/1.05 var(--head);margin:0}
+.meta{margin:.5rem 0 0;font:600 .95rem var(--head);color:var(--hv);letter-spacing:.03em}
+.head p{margin:0;max-width:38rem}
+.figs{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.figs figure:first-child:nth-last-child(odd){grid-column:1/-1}
+figure{margin:0}
+figure button{display:block;width:100%;padding:0;border:0;background:var(--panel);cursor:zoom-in;aspect-ratio:4/3;overflow:hidden}
+.figs figure:first-child:nth-last-child(odd) button{aspect-ratio:16/9}
+figure img{width:100%;height:100%;object-fit:cover;display:block}
+figure.fit img{object-fit:contain;background:#fff}
+figcaption{display:flex;gap:.75rem;padding-top:.5rem;font-size:.95rem;color:var(--muted)}
+figcaption b{font:700 .95rem var(--head);color:var(--ink);white-space:nowrap}
+dialog{border:0;padding:0;background:transparent;max-width:min(94vw,90rem);max-height:94vh;color:#fff}
+dialog::backdrop{background:rgba(10,10,10,.88)}
+dialog img{display:block;max-width:100%;max-height:84vh;margin:0 auto}
+dialog p{margin:.6rem 0 0;text-align:center}
+footer{border-top:3px solid var(--ink);padding-top:1.25rem;display:flex;flex-wrap:wrap;gap:.5rem 2rem;font:600 1.1rem var(--head)}
+@media (max-width:48rem){.hero,.head{grid-template-columns:1fr}.figs{grid-template-columns:1fr}.figs figure:first-child:nth-last-child(odd) button{aspect-ratio:4/3}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bar">
+    <a href="#top" id="brand">Your Name</a>
+    <nav id="nav"><a id="mail" href="mailto:you@example.com">Email</a><a id="gh" href="https://github.com/">GitHub</a><button id="theme" type="button" aria-label="Toggle color theme">Theme</button></nav>
+  </div>
+
+  <section class="hero" id="top">
+    <div>
+      <h1 id="name">Your Name</h1>
+      <p>Mechanical engineer. I <b>design, fabricate and install</b> battery packs and electric drivetrains in classic vehicles, from CAD through to the first drive.</p>
+    </div>
+    <div class="about">
+      <img src="images/portrait.jpg" alt="Portrait standing next to a red BMW" width="120" height="152">
+      <small>Based in Sydney, Australia. Available for [role / contract / full-time].</small>
+    </div>
+  </section>
+
+  <main id="projects"></main>
+
+  <footer><a id="mail2" href="mailto:you@example.com">you@example.com</a><a id="gh2" href="https://github.com/">github.com/your-handle</a><span>Photos and CAD are my own work.</span></footer>
+</div>
+
+<dialog id="lb" aria-label="Enlarged photo"><img alt=""><p></p></dialog>
+
+<script>
+/* ===== EDIT THIS SECTION: details, then project text. Each fig is [image, caption, optional "fit"]. ===== */
+const ME = { name:"Your Name", email:"you@example.com", github:"your-handle" };
+
+const PROJECTS = [
+ { title:"Battery module rack: CAD to build", meta:"2025 · CAD · Sheet metal · HV battery",
+   text:"A modular rack that holds battery modules and routes the high-voltage terminals, designed in CAD and then fabricated and installed. The same approach scaled from a two-module rack to a four-module box.",
+   figs:[["battery-cad","CAD model of the two-module rack with HV terminal studs and mounting feet.","fit"],
+         ["battery-module-pair","The built rack: two modules on a powder-coated tray with junction box and harness."],
+         ["moke-battery-box","Four-module battery box installed in a Moke, with labelled busbars and inline fuse."],
+         ["hv-enclosure","Fabricated steel HV enclosure with contactors and wiring, on the bench with a lifting frame."]] },
+ { title:"Land Rover: drive unit positioning", meta:"2026 · Mounts · Packaging · Fabrication",
+   text:"Replacing the original engine with an electric drive unit. The unit was hung from a jig to fix its position before any mounts were made, then the bay was rebuilt around it.",
+   figs:[["landrover-mockup","Drive unit suspended from a square-tube and threaded-rod jig to set its position and driveline angle."],
+         ["landrover-bay","Engine bay after installation: mounts, cooling lines and a labelled harness."]] },
+ { title:"Drive unit mounts and driveshafts", meta:"2025–2026 · Mounts · Driveline · Fabrication",
+   text:"Custom brackets, subframes and axle shafts to fit electric drive units into chassis never designed for them.",
+   figs:[["underbody-drive","Drive unit with orange HV cabling and matched axle shafts, seen from underneath."],
+         ["drive-unit-axle","Drive unit with CV axle, mounting bracket and shaft clamp."],
+         ["motor-subframe","Welded subframe carrying a motor and reduction housing under the floor."]] },
+ { title:"Rover P6 electric conversion", meta:"2026 · Packaging · HV systems",
+   text:"A 1960s saloon converted to electric, with battery boxes in the engine bay and power electronics in the boot, keeping the original exterior.",
+   figs:[["rover-p6","The car before conversion work."],
+         ["rover-bay","Two battery boxes in the engine bay, with the original grille and bumper."],
+         ["rover-boot","Boot packaging: inverter, HV distribution and battery box."]] },
+ { title:"Other conversions and vehicles", meta:"2025–2026 · Conversions · Safety retrofits",
+   text:"A selection of other builds in the workshop.",
+   figs:[["subaru-bay","Subaru kei car with an enclosed battery box and labelled high-voltage warnings."],
+         ["moke-and-kombi","A Moke and a split-window Kombi outside the workshop."],
+         ["kombi-charging","The Kombi on a DC fast charger."],
+         ["seatbelt","Retrofitted inertia-reel seatbelt and seat mounting."],
+         ["delorean","DeLorean DMC-12 outside the workshop."]] },
+ { title:"Earlier work: engine and gearbox removal", meta:"2022–2025 · Maintenance · Powertrain",
+   text:"Combustion-era jobs that built the fundamentals: removing, inspecting and refitting powertrains.",
+   figs:[["mx5-gearbox-out","Mazda MX-5 with the gearbox and exhaust removed for work."],
+         ["swift-engine-out","Suzuki Swift with the engine lifted out on a crane."]] }
+];
+/* ========================================================== */
+
+const $ = id => document.getElementById(id);
+const el = (t, a, ...k) => { const n = document.createElement(t); for (const x in a||{}) n.setAttribute(x, a[x]); n.append(...k); return n; };
+
+document.title = ME.name + " — Mechanical Engineering Projects";
+$("name").textContent = ME.name; $("brand").textContent = ME.name;
+["mail","mail2"].forEach(i => { $(i).href = "mailto:" + ME.email; });
+$("mail2").textContent = ME.email;
+["gh","gh2"].forEach(i => { $(i).href = "https://github.com/" + ME.github; });
+$("gh2").textContent = "github.com/" + ME.github;
+
+const lb = $("lb");
+lb.addEventListener("click", () => lb.close());
+
+const main = $("projects");
+PROJECTS.forEach(p => {
+  const figs = el("div", {class:"figs"});
+  p.figs.forEach(([img, cap, fit], i) => {
+    const src = "images/" + img + ".jpg";
+    const im = el("img", {src, alt:cap, loading:"lazy"});
+    const btn = el("button", {type:"button", "aria-label":"Enlarge: " + cap}, im);
+    btn.addEventListener("click", () => { const big = lb.querySelector("img"); big.src = src; big.alt = cap; lb.querySelector("p").textContent = cap; lb.showModal(); });
+    figs.append(el("figure", fit ? {class:"fit"} : {}, btn, el("figcaption", {}, el("b", {}, "Fig. " + (i+1)), cap)));
+  });
+  main.append(el("section", {class:"proj"},
+    el("div", {class:"head"}, el("div", {}, el("h2", {}, p.title), el("p", {class:"meta"}, p.meta)), el("p", {}, p.text)),
+    figs));
+});
+
+const root = document.documentElement;
+try { const t = localStorage.getItem("theme"); if (t) root.dataset.theme = t; } catch(e){}
+$("theme").addEventListener("click", () => {
+  const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme:dark)").matches;
+  root.dataset.theme = dark ? "light" : "dark";
+  try { localStorage.setItem("theme", root.dataset.theme); } catch(e){}
+});
+</script>
+</body>
+</html>
